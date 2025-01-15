@@ -16,6 +16,20 @@
 
 #define N_DEFAULT 100
 
+void define_u(double *** u, int N)
+{
+    for (int i = 1; i < N+1; i++)
+    {
+        for (int j = 1; j < N+1; j++)
+        {
+            for (int k = 1; k < N+1; k++)
+            {
+                
+            }
+        }
+    }
+}
+
 int main(int argc, char *argv[]) {
 
     int 	N = N_DEFAULT;
@@ -27,6 +41,7 @@ int main(int argc, char *argv[]) {
     char    *output_ext    = "";
     char	output_filename[FILENAME_MAX];
     double 	***u = NULL;
+    double  ***f = NULL;
 
 
     /* get the paramters from the command line */
@@ -39,7 +54,11 @@ int main(int argc, char *argv[]) {
     }
 
     // allocate memory
-    if ( (u = malloc_3d(N, N, N)) == NULL ) {
+    if ( (u = malloc_3d(N+2, N+2, N+2)) == NULL ) {
+        perror("array u: allocation failed");
+        exit(-1);
+    }
+    if ( (f = malloc_3d(N+2, N+2, N+2)) == NULL ) {
         perror("array u: allocation failed");
         exit(-1);
     }
