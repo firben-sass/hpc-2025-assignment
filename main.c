@@ -16,8 +16,7 @@
 
 #define N_DEFAULT 100
 
-int
-main(int argc, char *argv[]) {
+int main(int argc, char *argv[]) {
 
     int 	N = N_DEFAULT;
     int 	iter_max = 1000;
@@ -25,7 +24,7 @@ main(int argc, char *argv[]) {
     double	start_T;
     int		output_type = 0;
     char	*output_prefix = "poisson_res";
-    char        *output_ext    = "";
+    char    *output_ext    = "";
     char	output_filename[FILENAME_MAX];
     double 	***u = NULL;
 
