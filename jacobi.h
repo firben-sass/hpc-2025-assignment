@@ -8,4 +8,6 @@
 
 int seq_jacobi(double ***, double ***, double ***, int, int);
 
+int par_jacobi(double ***, double ***, double ***, int, int);
+
 #endif

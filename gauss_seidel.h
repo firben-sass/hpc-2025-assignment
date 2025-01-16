@@ -6,8 +6,12 @@
 
 // #pragma message("Including gauss_seidel.h")
 
-void _seq_gauss_seidel(double ***, double ***, double ***, int, int, int, int);
+void _seq_rec_gauss_seidel(double ***, double ***, double ***, int, int, int, int);
+
+void seq_rec_gauss_seidel(double ***, double ***, double ***, int, int);
 
 void seq_gauss_seidel(double ***, double ***, double ***, int, int);
+
+void par_gauss_seidel(double ***, double ***, double ***, int, int);
 
 #endif

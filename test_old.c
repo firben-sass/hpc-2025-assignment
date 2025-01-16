@@ -89,7 +89,7 @@ int main() {
     define_f(f, N);
 
     printf("Running Gauss Seidel\n\n");
-    seq_gauss_seidel(u_0, u_1, f, N, iter_max);
+    seq_rec_gauss_seidel(u_0, u_1, f, N, iter_max);
     deepcopy3DArray(u_1, out_gs, N);
 
     // Print out_j array

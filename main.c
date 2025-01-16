@@ -71,11 +71,11 @@ int main(int argc, char *argv[]) {
 
     #ifdef _JACOBI
         printf("Running Jacobi\n\n");
-        seq_jacobi(u_0, u_1, f, N, iter_max);
+        par_jacobi(u_0, u_1, f, N, iter_max);
     #endif
     #ifdef _GAUSS_SEIDEL
     printf("Running Gauss Seidel\n\n");
-        seq_gauss_seidel(u_0, u_1, f, N, iter_max);
+        par_gauss_seidel(u_0, u_1, f, N, iter_max);
     #endif
 
     // Print u array
