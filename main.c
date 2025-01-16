@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "print.h"
+#include <string.h>
 #include "alloc3d.h"
 #include "define_u_f.h"
 
@@ -15,29 +16,37 @@
 #include "gauss_seidel.h"
 #endif
 
-#define N_DEFAULT 100
-
 
 int main(int argc, char *argv[]) {
 
-    int 	N = N_DEFAULT;
+    int 	N = 5;
     int 	iter_max = 1000;
-    double	tolerance;
-    double	start_T;
-    int		output_type = 0;
-    char	*output_prefix = "poisson_res";
+    double	tolerance = 0.01;
+    double	start_T = 0.0;
+    int		output_type = 3;
     char    *output_ext    = "";
     char	output_filename[FILENAME_MAX];
     double 	***u_0 = NULL;
     double  ***u_1 = NULL;
     double  ***f = NULL;
 
+    char * filename = strrchr(argv[0], '/');
+    if (filename != NULL) {
+        filename++;
+    } else {
+        filename = argv[0];
+    }
+    char * output_prefix = filename;
 
     /* get the paramters from the command line */
-    N         = atoi(argv[1]);	// grid size
-    iter_max  = atoi(argv[2]);  // max. no. of iterations
-    tolerance = atof(argv[3]);  // tolerance
-    start_T   = atof(argv[4]);  // start T for all inner grid points
+    if (argc >= 2)
+        N         = atoi(argv[1]);	// grid size
+    if (argc >= 3)
+        iter_max  = atoi(argv[2]);  // max. no. of iterations
+    if (argc >= 4)
+        tolerance = atof(argv[3]);  // tolerance
+    if (argc >= 5)
+        start_T   = atof(argv[4]);  // start T for all inner grid points
     if (argc == 6) {
 	output_type = atoi(argv[5]);  // ouput type
     }
