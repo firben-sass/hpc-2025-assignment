@@ -1,3 +1,6 @@
+#include <stdlib.h>
+
+
 void define_u(double *** u, int N)
 {
     for (int i = 0; i < N+2; i++)
@@ -6,7 +9,7 @@ void define_u(double *** u, int N)
         {
             for (int k = 0; k < N+2; k++)
             {
-                if (i == N || j == 0 || j == N || k == 0 || k == N)
+                if (i == N+1 || j == 0 || j == N+1 || k == 0 || k == N+1)
                     u[i][j][k] = 20;
                 else
                     u[i][j][k] = 0;

@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include "alloc3d.h"
 #include "print.h"
+#include "define_u_f.h"
 
 #ifdef _JACOBI
 #include "jacobi.h"
@@ -13,6 +14,8 @@
 #ifdef _GAUSS_SEIDEL
 #include "gauss_seidel.h"
 #endif
+
+
 
 #define N_DEFAULT 100
 
@@ -27,7 +30,8 @@ int main(int argc, char *argv[]) {
     char	*output_prefix = "poisson_res";
     char    *output_ext    = "";
     char	output_filename[FILENAME_MAX];
-    double 	***u = NULL;
+    double 	***u_0 = NULL;
+    double  ***u_1 = NULL;
     double  ***f = NULL;
 
 
@@ -41,8 +45,12 @@ int main(int argc, char *argv[]) {
     }
 
     // allocate memory
-    if ( (u = malloc_3d(N+2, N+2, N+2)) == NULL ) {
-        perror("array u: allocation failed");
+    if ( (u_0 = malloc_3d(N+2, N+2, N+2)) == NULL ) {
+        perror("array u_0: allocation failed");
+        exit(-1);
+    }
+    if ( (u_1 = malloc_3d(N+2, N+2, N+2)) == NULL ) {
+        perror("array u_1: allocation failed");
         exit(-1);
     }
     if ( (f = malloc_3d(N+2, N+2, N+2)) == NULL ) {
@@ -50,12 +58,30 @@ int main(int argc, char *argv[]) {
         exit(-1);
     }
 
-    /*
-     *
-     * fill in your code here 
-     *
-     *
-     */
+    define_u(u_0, N);
+    define_u(u_1, N);
+    define_f(f, N);
+
+    #ifdef _JACOBI
+        printf("Running Jacobi\n\n");
+        seq_jacobi(u_0, u_1, f, N, iter_max);
+    #endif
+    #ifdef _GAUSS_SEIDEL
+    printf("Running Gauss Seidel\n\n");
+        seq_gauss_seidel(u_0, u_1, f, N, iter_max);
+    #endif
+
+    // Print u array
+    for (int i = 0; i < N+2; i++) {
+        printf("2D Array at index %d:\n", i);
+        for (int j = 0; j < N+2; j++) {
+            for (int k = 0; k < N+2; k++) {
+                printf("%#.6g ", u_1[i][j][k]); // Print each number with a minimum width of 3
+            }
+            printf("\n"); // Newline for rows
+        }
+        printf("\n"); // Newline between 2D arrays
+    }
 
     // dump  results if wanted 
     switch(output_type) {
@@ -66,13 +92,13 @@ int main(int argc, char *argv[]) {
 	    output_ext = ".bin";
 	    sprintf(output_filename, "%s_%d%s", output_prefix, N, output_ext);
 	    fprintf(stderr, "Write binary dump to %s: ", output_filename);
-	    print_binary(output_filename, N, u);
+	    print_binary(output_filename, N, u_1);
 	    break;
 	case 4:
 	    output_ext = ".vtk";
 	    sprintf(output_filename, "%s_%d%s", output_prefix, N, output_ext);
 	    fprintf(stderr, "Write VTK file to %s: ", output_filename);
-	    print_vtk(output_filename, N, u);
+	    print_vtk(output_filename, N, u_1);
 	    break;
 	default:
 	    fprintf(stderr, "Non-supported output type!\n");
@@ -80,7 +106,9 @@ int main(int argc, char *argv[]) {
     }
 
     // de-allocate memory
-    free_3d(u);
+    free_3d(u_0);
+    free_3d(u_1);
+    free_3d(f);
 
     return(0);
 }

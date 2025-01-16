@@ -1,6 +1,7 @@
 /* $Id: print.c,v 1.1 2019/12/12 15:03:38 gbarbd Exp gbarbd $ */
 #include <stdio.h>
 #include <inttypes.h>
+#include <string.h>
 
 static int
 is_little_endian(void) {
@@ -15,7 +16,10 @@ print_binary(char *fname, int num, double ***u) {
     size_t written;
     size_t items = num*num*num;
 
-    if ( (f_ptr = fopen(fname, "w")) == NULL ) {
+    char fdir[100] = "outputs/";
+    strcat(fdir, fname);
+
+    if ( (f_ptr = fopen(fdir, "w")) == NULL ) {
        perror("No output! fopen()");
        return;
     }
@@ -40,7 +44,10 @@ print_vtk(const char *fname, int n, double ***u) {
     int b;
     unsigned char tmp;
 
-    if ( (f_ptr = fopen(fname, "w")) == NULL ) {
+    char fdir[100] = "outputs/";
+    strcat(fdir, fname);
+
+    if ( (f_ptr = fopen(fdir, "w")) == NULL ) {
        perror("No output! fopen()");
        return;
     }
