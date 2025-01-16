@@ -3,16 +3,6 @@
  */
 #include <math.h>
 
-void seq_gauss_seidel(double *** u_0, double *** u_1, double *** f, int N, int P)
-{
-    for (int p; p < P; p++)
-    {
-        _seq_gauss_seidel(u_0, u_1, f, N, N+1, N+1, N+1);
-        u_0 = u_1;
-    }
-    
-    return;
-}
 
 void _seq_gauss_seidel(double *** u_0, double *** u_1, double *** f, int N, int i, int j, int k)
 {   
@@ -33,6 +23,17 @@ void _seq_gauss_seidel(double *** u_0, double *** u_1, double *** f, int N, int 
 
     double delta = 2.0/N;
     u_1[i][j][k] = (u_1_1_0_0 + u_1_0_1_0 + u_1_0_0_1 + u_0_1_0_0 + u_0_0_1_0 + u_0_0_0_1 + delta*delta*f[i][j][k]) / 6.0;
+
+    return;
+}
+
+void seq_gauss_seidel(double *** u_0, double *** u_1, double *** f, int N, int P)
+{
+    for (int p; p < P; p++)
+    {
+        _seq_gauss_seidel(u_0, u_1, f, N, N, N, N);
+        u_0 = u_1;
+    }
 
     return;
 }

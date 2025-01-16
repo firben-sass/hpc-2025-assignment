@@ -3,8 +3,8 @@
  */
 #include <stdio.h>
 #include <stdlib.h>
-#include "alloc3d.h"
 #include "print.h"
+#include "alloc3d.h"
 #include "define_u_f.h"
 
 #ifdef _JACOBI
@@ -14,8 +14,6 @@
 #ifdef _GAUSS_SEIDEL
 #include "gauss_seidel.h"
 #endif
-
-
 
 #define N_DEFAULT 100
 
@@ -54,7 +52,7 @@ int main(int argc, char *argv[]) {
         exit(-1);
     }
     if ( (f = malloc_3d(N+2, N+2, N+2)) == NULL ) {
-        perror("array u: allocation failed");
+        perror("array f: allocation failed");
         exit(-1);
     }
 

@@ -4,8 +4,10 @@
 #ifndef _GAUSS_SEIDEL_H
 #define _GAUSS_SEIDEL_H
 
-int seq_gauss_seidel(double ***, double ***, double ***, int, int);
+// #pragma message("Including gauss_seidel.h")
 
 void _seq_gauss_seidel(double ***, double ***, double ***, int, int, int, int);
+
+void seq_gauss_seidel(double ***, double ***, double ***, int, int);
 
 #endif

@@ -9,6 +9,8 @@ MAIN_J  = bin/main_j.o
 MAIN_GS = bin/main_gs.o
 OBJS_J  = $(MAIN_J) bin/jacobi.o
 OBJS_GS = $(MAIN_GS) bin/gauss_seidel.o
+TEST_SRC = test.c
+TEST_OUT = test
 
 # options and settings for the GCC compilers
 #
@@ -43,6 +45,10 @@ bin/main_gs.o: main.c
 
 bin/%.o: %.c
 	$(CC) -o $@ $(CFLAGS) -c $<
+
+test:
+	$(CC) $(CFLAGS) $(TEST_SRC) $(LDFLAGS) && ./a.out
+	@rm -f a.out
 
 clean:
 	@/bin/rm -f core bin/*.o *~
