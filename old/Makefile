@@ -4,19 +4,19 @@ TARGET_J  = bin/poisson_j        # Jacobi
 TARGET_GS = bin/poisson_gs       # Gauss-Seidel
 COMPARE   = bin/compare_outputs  # Comparison tool
 
-SOURCES = main.c print.c alloc3d.c
-OBJECTS = bin/print.o bin/alloc3d.o 
+SOURCES = main.c print.c alloc3d.c define_u_f.c
+OBJECTS = bin/print.o bin/alloc3d.o bin/define_u_f.o
 MAIN_J  = bin/main_j.o
 MAIN_GS = bin/main_gs.o
 OBJS_J  = $(MAIN_J) bin/jacobi.o
 OBJS_GS = $(MAIN_GS) bin/gauss_seidel.o
-# TEST_SRC = compare_outputs.c
+TEST_SRC = compare_outputs.c
 
 # options and settings for the GCC compilers
 #
 CC      = gcc
 DEFS    =
-OPT     = -g -fopenmp
+OPT     = -g
 IPO     =
 ISA     =
 CHIP    =
@@ -49,15 +49,15 @@ bin/%.o: %.c
 $(COMPARE): $(TEST_SRC)
 	$(CC) $(CFLAGS) -o $@ $(TEST_SRC) $(LDFLAGS)
 
-# test: $(TARGET_J) $(TARGET_GS) $(COMPARE)
-# 	@echo "Running Jacobi binary..."
-# 	./$(TARGET_J) > /dev/null
-# 	@echo "Jacobi output written to outputs/output_j.bin."
-# 	@echo "Running Gauss-Seidel binary..."
-# 	./$(TARGET_GS) > /dev/null
-# 	@echo "Gauss-Seidel output written to outputs/output_gs.bin."
-# 	@echo "Comparing outputs..."
-# 	./$(COMPARE) outputs/poisson_gs_5.bin outputs/poisson_j_5.bin
+test: $(TARGET_J) $(TARGET_GS) $(COMPARE)
+	@echo "Running Jacobi binary..."
+	./$(TARGET_J) > /dev/null
+	@echo "Jacobi output written to outputs/output_j.bin."
+	@echo "Running Gauss-Seidel binary..."
+	./$(TARGET_GS) > /dev/null
+	@echo "Gauss-Seidel output written to outputs/output_gs.bin."
+	@echo "Comparing outputs..."
+	./$(COMPARE) outputs/poisson_gs_5.bin outputs/poisson_j_5.bin
 
 clean:
 	@/bin/rm -f core bin/*.o *~
@@ -71,3 +71,4 @@ realclean: clean
 bin/main_j.o: main.c print.h jacobi.h
 bin/main_gs.o: main.c print.h gauss_seidel.h
 bin/print.o: print.h
+bin/define_u_f.o: define_u_f.c define_u_f.h
