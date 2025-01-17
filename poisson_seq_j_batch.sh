@@ -9,7 +9,7 @@
 #BSUB -n 1
 #BSUB -R "rusage[mem=2048]"
 #BSUB -W 10
-#BSUB -R "span[hosts=1] 
+#BSUB -R "span[hosts=1]"
 
 EXECUTABLE=poisson_j
 
