@@ -28,5 +28,6 @@ do
     for T in $T_START
     do
         ./$EXECUTABLE $N $MAX_ITER $TOL $T
+        echo "Running poisson_gs with N=$N, T=$T"
     done
 done
