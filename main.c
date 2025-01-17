@@ -207,12 +207,10 @@ int main(int argc, char *argv[]) {
                 for (int k = 1; k < N+1; k++) {
                     // Compute difference using 2-norm
                     diff_1 += (u[i][j][k] - u_old[i][j][k]) * (u[i][j][k] - u_old[i][j][k]);
-                    // printf("diff[%d][%d][%d] = %f\n", i, j, k, (u[i][j][k] - u_old[i][j][k]));
                 }
             }
         }
         diff = diff_1;
-        // printf("Iteration: %d, diff: %f\n", iter, diff);
         iter++;
     }
     end_time = omp_get_wtime();

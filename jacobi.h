@@ -6,7 +6,6 @@
 #ifndef _JACOBI_H
 #define _JACOBI_H
 
-// int jacobi(double ***, double ***, double ***, int, int, double *);
 // Define prototype
 double *** jacobi(double ***, double ***, double ***, int);
 #endif
