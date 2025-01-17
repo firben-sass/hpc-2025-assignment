@@ -51,7 +51,7 @@ $(COMPARE): $(TEST_SRC)
 
 test: $(TARGET_J) $(TARGET_GS) $(COMPARE)
 	@echo "Running Jacobi binary..."
-	./$(TARGET_J) output_j.bin > /dev/null
+	./$(TARGET_J) > /dev/null
 	@echo "Jacobi output written to outputs/output_j.bin."
 	@echo "Running Gauss-Seidel binary..."
 	./$(TARGET_GS) > /dev/null

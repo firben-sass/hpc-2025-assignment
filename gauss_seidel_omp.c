@@ -211,4 +211,4 @@ double*** gauss_seidel_omp(double ***u, double ***f, int N) {
         }
     }
     return u;
-}  
+}

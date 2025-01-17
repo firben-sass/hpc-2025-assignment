@@ -71,14 +71,16 @@ int main(int argc, char *argv[]) {
 
     #ifdef _JACOBI
         printf("Running Jacobi\n\n");
-        par_jacobi(u_0, u_1, f, N, iter_max);
+        seq_jacobi(u_0, u_1, f, N, iter_max);
+        // u_1 = jacobi_LG(u_0, u_1,f, N, double *ki_to_xz, double *j_to_y)
     #endif
     #ifdef _GAUSS_SEIDEL
     printf("Running Gauss Seidel\n\n");
-        par_gauss_seidel(u_0, u_1, f, N, iter_max);
+        seq_gauss_seidel(u_1, f, N, iter_max);
+        // u_1 = gauss_seidel_omp(u_0, f, N)
     #endif
 
-    // Print u array
+    // Print array
     for (int i = 0; i < N+2; i++) {
         printf("2D Array at index %d:\n", i);
         for (int j = 0; j < N+2; j++) {

@@ -10,4 +10,6 @@ int seq_jacobi(double ***, double ***, double ***, int, int);
 
 int par_jacobi(double ***, double ***, double ***, int, int);
 
+// double *** jacobi_LG(double ***, double ***, double ***, int, double *, double *)
+
 #endif

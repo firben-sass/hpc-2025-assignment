@@ -39,8 +39,7 @@ void seq_rec_gauss_seidel(double *** u_0, double *** u_1, double *** f, int N, i
     return;
 }
 
-// TODO: Spørg hjælpelærer om den er korrekt
-void seq_gauss_seidel(double ***u_0, double ***u_1, double ***f, int N, int P)
+void seq_gauss_seidel(double ***u_1, double ***f, int N, int P)
 {
     // Grid spacing
     double delta = 2.0 / N;
@@ -52,13 +51,13 @@ void seq_gauss_seidel(double ***u_0, double ***u_1, double ***f, int N, int P)
             for (int j = 1; j <= N; j++) {
                 for (int k = 1; k <= N; k++) {
                     // Calculate the updated value for u_1[i][j][k]
-                    double u_1_1_0_0 = u_1[i - 1][j][k];
-                    double u_1_0_1_0 = u_1[i][j - 1][k];
-                    double u_1_0_0_1 = u_1[i][j][k - 1];
+                    double u_0_1_0_0 = u_1[i - 1][j][k];
+                    double u_0_0_1_0 = u_1[i][j - 1][k];
+                    double u_0_0_0_1 = u_1[i][j][k - 1];
 
-                    double u_0_1_0_0 = u_0[i + 1][j][k];
-                    double u_0_0_1_0 = u_0[i][j + 1][k];
-                    double u_0_0_0_1 = u_0[i][j][k + 1];
+                    double u_1_1_0_0 = u_1[i + 1][j][k];
+                    double u_1_0_1_0 = u_1[i][j + 1][k];
+                    double u_1_0_0_1 = u_1[i][j][k + 1];
 
                     u_1[i][j][k] = (u_1_1_0_0 + u_1_0_1_0 + u_1_0_0_1 + 
                                     u_0_1_0_0 + u_0_0_1_0 + u_0_0_0_1 + 
@@ -66,11 +65,6 @@ void seq_gauss_seidel(double ***u_0, double ***u_1, double ***f, int N, int P)
                 }
             }
         }
-
-        // Swap the pointers to update u_0 for the next iteration
-        double ***temp = u_0;
-        u_0 = u_1;
-        u_1 = temp;
     }
 
     return;
@@ -112,3 +106,33 @@ void par_gauss_seidel(double ***u_0, double ***u_1, double ***f, int N, int P)
 
     return;
 }
+
+// double*** gauss_seidel_omp(double ***u, double ***f, int N) {
+//     double delta = 2.0 / N;
+//     double delta_2 = delta * delta;
+//     double factor = 1.0 / 6.0;
+
+//     // Parallelize using OpenMP with doacross
+//     #pragma omp parallel default(none) shared(u, f, N, delta_2, factor) private(i, j, k)
+//     {
+//         for (int i = 1; i < N + 1; ++i) {
+//             #pragma omp for ordered(2) collapse(2) schedule(static, 1)
+//             for (int j = 1; j < N + 1; ++j) {
+//                 #pragma omp ordered depend(sink: i - 1, j - 1) \
+//                                       depend(sink: i - 1, j) \
+//                                       depend(sink: i - 1, j + 1) \
+//                                       depend(sink: i, j - 1)
+//                 for (int k = 1; k < N + 1; ++k) {
+//                     u[i][j][k] = factor * (
+//                         u[i - 1][j][k] + u[i + 1][j][k] +
+//                         u[i][j - 1][k] + u[i][j + 1][k] +
+//                         u[i][j][k - 1] + u[i][j][k + 1] +
+//                         delta_2 * f[i][j][k]
+//                     );
+//                 }
+//                 #pragma omp ordered depend(source)
+//             }
+//         }
+//     }
+//     return u;
+// }
