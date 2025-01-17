@@ -1,0 +1,230 @@
+Used 22 iterations, diff = 0.000816, time taken: 0.00002061
+Running poisson_j with N=3, T=-10
+Used 22 iterations, diff = 0.000554, time taken: 0.00002042
+Running poisson_j with N=3, T=-5
+Used 21 iterations, diff = 0.000685, time taken: 0.00001954
+Running poisson_j with N=3, T=0
+Used 20 iterations, diff = 0.000726, time taken: 0.00001880
+Running poisson_j with N=3, T=5
+Used 19 iterations, diff = 0.000571, time taken: 0.00001805
+Running poisson_j with N=3, T=10
+Used 16 iterations, diff = 0.000750, time taken: 0.00001550
+Running poisson_j with N=3, T=15
+Used 14 iterations, diff = 0.000710, time taken: 0.00001390
+Running poisson_j with N=3, T=20
+Used 18 iterations, diff = 0.000712, time taken: 0.00001708
+Running poisson_j with N=3, T=25
+Used 20 iterations, diff = 0.000548, time taken: 0.00001882
+Running poisson_j with N=3, T=30
+Used 21 iterations, diff = 0.000560, time taken: 0.00001963
+Running poisson_j with N=3, T=35
+Used 50 iterations, diff = 0.000983, time taken: 0.00010662
+Running poisson_j with N=5, T=-10
+Used 49 iterations, diff = 0.000869, time taken: 0.00010335
+Running poisson_j with N=5, T=-5
+Used 47 iterations, diff = 0.000920, time taken: 0.00010176
+Running poisson_j with N=5, T=0
+Used 45 iterations, diff = 0.000811, time taken: 0.00009534
+Running poisson_j with N=5, T=5
+Used 41 iterations, diff = 0.000864, time taken: 0.00008802
+Running poisson_j with N=5, T=10
+Used 32 iterations, diff = 0.000883, time taken: 0.00006904
+Running poisson_j with N=5, T=15
+Used 35 iterations, diff = 0.000966, time taken: 0.00007505
+Running poisson_j with N=5, T=20
+Used 42 iterations, diff = 0.000886, time taken: 0.00009681
+Running poisson_j with N=5, T=25
+Used 45 iterations, diff = 0.000979, time taken: 0.00009549
+Running poisson_j with N=5, T=30
+Used 48 iterations, diff = 0.000789, time taken: 0.00009869
+Running poisson_j with N=5, T=35
+Used 166 iterations, diff = 0.000965, time taken: 0.00170630
+Running poisson_j with N=10, T=-10
+Used 161 iterations, diff = 0.000969, time taken: 0.00166058
+Running poisson_j with N=10, T=-5
+Used 155 iterations, diff = 0.000950, time taken: 0.00162172
+Running poisson_j with N=10, T=0
+Used 146 iterations, diff = 0.000996, time taken: 0.00147875
+Running poisson_j with N=10, T=5
+Used 133 iterations, diff = 0.000994, time taken: 0.00140961
+Running poisson_j with N=10, T=10
+Used 103 iterations, diff = 0.000973, time taken: 0.00107883
+Running poisson_j with N=10, T=15
+Used 113 iterations, diff = 0.000953, time taken: 0.00116716
+Running poisson_j with N=10, T=20
+Used 137 iterations, diff = 0.000931, time taken: 0.00142896
+Running poisson_j with N=10, T=25
+Used 148 iterations, diff = 0.000990, time taken: 0.00155874
+Running poisson_j with N=10, T=30
+Used 156 iterations, diff = 0.000980, time taken: 0.00162079
+Running poisson_j with N=10, T=35
+Used 344 iterations, diff = 0.000977, time taken: 0.01020921
+Running poisson_j with N=15, T=-10
+Used 333 iterations, diff = 0.000999, time taken: 0.00984367
+Running poisson_j with N=15, T=-5
+Used 320 iterations, diff = 0.000995, time taken: 0.00945831
+Running poisson_j with N=15, T=0
+Used 303 iterations, diff = 0.000973, time taken: 0.00897733
+Running poisson_j with N=15, T=5
+Used 276 iterations, diff = 0.000978, time taken: 0.00816367
+Running poisson_j with N=15, T=10
+Used 216 iterations, diff = 0.000999, time taken: 0.00642813
+Running poisson_j with N=15, T=15
+Used 225 iterations, diff = 0.000965, time taken: 0.00665194
+Running poisson_j with N=15, T=20
+Used 279 iterations, diff = 0.000967, time taken: 0.00824177
+Running poisson_j with N=15, T=25
+Used 304 iterations, diff = 0.000997, time taken: 0.00899049
+Running poisson_j with N=15, T=30
+Used 322 iterations, diff = 0.000964, time taken: 0.00954278
+Running poisson_j with N=15, T=35
+Used 581 iterations, diff = 0.000979, time taken: 0.03825277
+Running poisson_j with N=20, T=-10
+Used 562 iterations, diff = 0.000997, time taken: 0.03732264
+Running poisson_j with N=20, T=-5
+Used 540 iterations, diff = 0.000978, time taken: 0.03549213
+Running poisson_j with N=20, T=0
+Used 509 iterations, diff = 0.000981, time taken: 0.03352386
+Running poisson_j with N=20, T=5
+Used 461 iterations, diff = 0.000990, time taken: 0.03026094
+Running poisson_j with N=20, T=10
+Used 352 iterations, diff = 0.000987, time taken: 0.02312708
+Running poisson_j with N=20, T=15
+Used 383 iterations, diff = 0.000978, time taken: 0.02523181
+Running poisson_j with N=20, T=20
+Used 471 iterations, diff = 0.000993, time taken: 0.03119350
+Running poisson_j with N=20, T=25
+Used 515 iterations, diff = 0.000983, time taken: 0.03392304
+Running poisson_j with N=20, T=30
+Used 544 iterations, diff = 0.000986, time taken: 0.03617806
+Running poisson_j with N=20, T=35
+Used 876 iterations, diff = 0.000996, time taken: 0.11603249
+Running poisson_j with N=25, T=-10
+Used 848 iterations, diff = 0.000997, time taken: 0.10817548
+Running poisson_j with N=25, T=-5
+Used 813 iterations, diff = 0.000997, time taken: 0.10400744
+Running poisson_j with N=25, T=0
+Used 766 iterations, diff = 0.000993, time taken: 0.09781633
+Running poisson_j with N=25, T=5
+Used 693 iterations, diff = 0.000996, time taken: 0.08840792
+Running poisson_j with N=25, T=10
+Used 527 iterations, diff = 0.000994, time taken: 0.06798722
+Running poisson_j with N=25, T=15
+Used 571 iterations, diff = 0.000989, time taken: 0.07311271
+Running poisson_j with N=25, T=20
+Used 708 iterations, diff = 0.000988, time taken: 0.09119881
+Running poisson_j with N=25, T=25
+Used 775 iterations, diff = 0.000989, time taken: 0.09941849
+Running poisson_j with N=25, T=30
+Used 819 iterations, diff = 0.001000, time taken: 0.10486085
+Running poisson_j with N=25, T=35
+Used 1000 iterations, diff = 4.175146, time taken: 1.01439992
+Running poisson_j with N=50, T=-10
+Used 1000 iterations, diff = 2.774264, time taken: 1.01519221
+Running poisson_j with N=50, T=-5
+Used 1000 iterations, diff = 1.659105, time taken: 1.01444873
+Running poisson_j with N=50, T=0
+Used 1000 iterations, diff = 0.829669, time taken: 1.02268702
+Running poisson_j with N=50, T=5
+Used 1000 iterations, diff = 0.285957, time taken: 1.01961392
+Running poisson_j with N=50, T=10
+Used 1000 iterations, diff = 0.027968, time taken: 1.01439559
+Running poisson_j with N=50, T=15
+Used 1000 iterations, diff = 0.055703, time taken: 1.02360930
+Running poisson_j with N=50, T=20
+Used 1000 iterations, diff = 0.369161, time taken: 1.01461035
+Running poisson_j with N=50, T=25
+Used 1000 iterations, diff = 0.968342, time taken: 1.02042190
+Running poisson_j with N=50, T=30
+Used 1000 iterations, diff = 1.853246, time taken: 0.86541451
+Running poisson_j with N=50, T=35
+Used 1000 iterations, diff = 49.236657, time taken: 11.98829150
+Running poisson_j with N=100, T=-10
+Used 1000 iterations, diff = 33.034657, time taken: 12.95449524
+Running poisson_j with N=100, T=-5
+Used 1000 iterations, diff = 20.132577, time taken: 12.96161778
+Running poisson_j with N=100, T=0
+Used 1000 iterations, diff = 10.530416, time taken: 12.98585908
+Running poisson_j with N=100, T=5
+Used 1000 iterations, diff = 4.228174, time taken: 12.99829097
+Running poisson_j with N=100, T=10
+Used 1000 iterations, diff = 1.225851, time taken: 13.10950323
+Running poisson_j with N=100, T=15
+Used 1000 iterations, diff = 1.523447, time taken: 13.09037295
+Running poisson_j with N=100, T=20
+Used 1000 iterations, diff = 5.120962, time taken: 12.99639363
+Running poisson_j with N=100, T=25
+Used 1000 iterations, diff = 12.018396, time taken: 13.08941247
+Running poisson_j with N=100, T=30
+Used 1000 iterations, diff = 22.215750, time taken: 13.06093847
+Running poisson_j with N=100, T=35
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 23782213: <poisson_seq_j_O2> in cluster <dcc> Done
+
+Job <poisson_seq_j_O2> was submitted from host <n-62-27-18> by user <s194354> in cluster <dcc> at Fri Jan 17 14:35:31 2025
+Job was executed on host(s) <n-62-21-76>, in queue <hpcintro>, as user <s194354> in cluster <dcc> at Fri Jan 17 14:35:33 2025
+</zhome/47/4/147571> was used as the home directory.
+</zhome/47/4/147571/Documents/02614_HPC/Assignment_2_Github> was used as the working directory.
+Started at Fri Jan 17 14:35:33 2025
+Terminated at Fri Jan 17 14:37:54 2025
+Results reported at Fri Jan 17 14:37:54 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+# 02614 - High-Performance Computing, January 2025
+# 
+# Author: Group 1
+#
+#BSUB -J poisson_seq_j_O2
+#BSUB -o poisson_seq_j_O2_%J.out
+#BSUB -q hpcintro
+#BSUB -n 1
+#BSUB -R "rusage[mem=2048]"
+#BSUB -W 10
+#BSUB -R "span[hosts=1]"
+
+EXECUTABLE=poisson_j
+
+# Defining parameters
+# Number of grid points in each dimension
+GRID_SIZES="3 5 10 15 20 25 50 100"
+# Starting temp
+T_START="-10 -5 0 5 10 15 20 25 30 35"
+# Number of iterations
+MAX_ITER="1000"
+# Tolerance
+TOL="1e-3"
+
+for N in $GRID_SIZES
+do
+    for T in $T_START
+    do
+        ./$EXECUTABLE $N $MAX_ITER $TOL $T
+        echo "Running poisson_j with N=$N, T=$T"
+    done
+done
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   141.39 sec.
+    Max Memory :                                 46 MB
+    Average Memory :                             34.33 MB
+    Total Requested Memory :                     2048.00 MB
+    Delta Memory :                               2002.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                5
+    Run time :                                   141 sec.
+    Turnaround time :                            143 sec.
+
+The output (if any) is above this job summary.
+

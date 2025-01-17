@@ -1,0 +1,5 @@
+Iter = 1000, Diff = 20.132577, Time = 49.75242999, N=100, T=0, OPT=O0
+Iter = 1000, Diff = 20.132577, Time = 17.62257069, N=100, T=0, OPT=O1
+Iter = 1000, Diff = 20.132577, Time = 8.47856970, N=100, T=0, OPT=O2
+Iter = 1000, Diff = 20.132577, Time = 7.88618186, N=100, T=0, OPT=O3
+Iter = 1000, Diff = 20.132577, Time = 7.37009309, N=100, T=0, OPT=Ofast

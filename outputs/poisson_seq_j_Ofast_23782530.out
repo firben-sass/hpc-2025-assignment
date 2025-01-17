@@ -1,0 +1,230 @@
+Iter = 22, Diff = 0.000816, Time = 0.00001658
+N=3, T=-10
+Iter = 22, Diff = 0.000554, Time = 0.00001669
+N=3, T=-5
+Iter = 21, Diff = 0.000685, Time = 0.00001597
+N=3, T=0
+Iter = 20, Diff = 0.000726, Time = 0.00001519
+N=3, T=5
+Iter = 19, Diff = 0.000571, Time = 0.00001438
+N=3, T=10
+Iter = 16, Diff = 0.000750, Time = 0.00001217
+N=3, T=15
+Iter = 14, Diff = 0.000710, Time = 0.00001167
+N=3, T=20
+Iter = 18, Diff = 0.000712, Time = 0.00001437
+N=3, T=25
+Iter = 20, Diff = 0.000548, Time = 0.00001566
+N=3, T=30
+Iter = 21, Diff = 0.000560, Time = 0.00001600
+N=3, T=35
+Iter = 50, Diff = 0.000983, Time = 0.00008861
+N=5, T=-10
+Iter = 49, Diff = 0.000869, Time = 0.00008575
+N=5, T=-5
+Iter = 47, Diff = 0.000920, Time = 0.00008269
+N=5, T=0
+Iter = 45, Diff = 0.000811, Time = 0.00007881
+N=5, T=5
+Iter = 41, Diff = 0.000864, Time = 0.00007266
+N=5, T=10
+Iter = 32, Diff = 0.000883, Time = 0.00005807
+N=5, T=15
+Iter = 35, Diff = 0.000966, Time = 0.00006314
+N=5, T=20
+Iter = 42, Diff = 0.000886, Time = 0.00007462
+N=5, T=25
+Iter = 45, Diff = 0.000979, Time = 0.00007898
+N=5, T=30
+Iter = 48, Diff = 0.000789, Time = 0.00008468
+N=5, T=35
+Iter = 166, Diff = 0.000965, Time = 0.00130792
+N=10, T=-10
+Iter = 161, Diff = 0.000969, Time = 0.00132818
+N=10, T=-5
+Iter = 155, Diff = 0.000950, Time = 0.00127019
+N=10, T=0
+Iter = 146, Diff = 0.000996, Time = 0.00114745
+N=10, T=5
+Iter = 133, Diff = 0.000994, Time = 0.00105004
+N=10, T=10
+Iter = 103, Diff = 0.000973, Time = 0.00081235
+N=10, T=15
+Iter = 113, Diff = 0.000953, Time = 0.00094225
+N=10, T=20
+Iter = 137, Diff = 0.000931, Time = 0.00112248
+N=10, T=25
+Iter = 148, Diff = 0.000990, Time = 0.00119670
+N=10, T=30
+Iter = 156, Diff = 0.000980, Time = 0.00123319
+N=10, T=35
+Iter = 344, Diff = 0.000977, Time = 0.00700005
+N=15, T=-10
+Iter = 333, Diff = 0.000999, Time = 0.00684322
+N=15, T=-5
+Iter = 320, Diff = 0.000995, Time = 0.00674163
+N=15, T=0
+Iter = 303, Diff = 0.000973, Time = 0.00618553
+N=15, T=5
+Iter = 276, Diff = 0.000978, Time = 0.00563134
+N=15, T=10
+Iter = 216, Diff = 0.000999, Time = 0.00441312
+N=15, T=15
+Iter = 225, Diff = 0.000965, Time = 0.00460296
+N=15, T=20
+Iter = 279, Diff = 0.000967, Time = 0.00565198
+N=15, T=25
+Iter = 304, Diff = 0.000997, Time = 0.00622869
+N=15, T=30
+Iter = 322, Diff = 0.000964, Time = 0.00662139
+N=15, T=35
+Iter = 581, Diff = 0.000979, Time = 0.02871712
+N=20, T=-10
+Iter = 562, Diff = 0.000997, Time = 0.02761060
+N=20, T=-5
+Iter = 540, Diff = 0.000978, Time = 0.02672971
+N=20, T=0
+Iter = 509, Diff = 0.000981, Time = 0.02499590
+N=20, T=5
+Iter = 461, Diff = 0.000990, Time = 0.02289426
+N=20, T=10
+Iter = 352, Diff = 0.000987, Time = 0.01739378
+N=20, T=15
+Iter = 383, Diff = 0.000978, Time = 0.01902488
+N=20, T=20
+Iter = 471, Diff = 0.000993, Time = 0.02315943
+N=20, T=25
+Iter = 515, Diff = 0.000983, Time = 0.02569799
+N=20, T=30
+Iter = 544, Diff = 0.000986, Time = 0.02650632
+N=20, T=35
+Iter = 876, Diff = 0.000996, Time = 0.08929749
+N=25, T=-10
+Iter = 848, Diff = 0.000997, Time = 0.08592815
+N=25, T=-5
+Iter = 813, Diff = 0.000997, Time = 0.08256426
+N=25, T=0
+Iter = 766, Diff = 0.000993, Time = 0.07792134
+N=25, T=5
+Iter = 693, Diff = 0.000996, Time = 0.07025246
+N=25, T=10
+Iter = 527, Diff = 0.000994, Time = 0.05341728
+N=25, T=15
+Iter = 571, Diff = 0.000989, Time = 0.05771847
+N=25, T=20
+Iter = 708, Diff = 0.000988, Time = 0.07220943
+N=25, T=25
+Iter = 775, Diff = 0.000989, Time = 0.07825359
+N=25, T=30
+Iter = 819, Diff = 0.001000, Time = 0.08257112
+N=25, T=35
+Iter = 1000, Diff = 4.175146, Time = 0.78190496
+N=50, T=-10
+Iter = 1000, Diff = 2.774264, Time = 0.78330689
+N=50, T=-5
+Iter = 1000, Diff = 1.659105, Time = 0.77959838
+N=50, T=0
+Iter = 1000, Diff = 0.829669, Time = 0.77873397
+N=50, T=5
+Iter = 1000, Diff = 0.285957, Time = 0.77932439
+N=50, T=10
+Iter = 1000, Diff = 0.027968, Time = 0.78171451
+N=50, T=15
+Iter = 1000, Diff = 0.055703, Time = 0.77955785
+N=50, T=20
+Iter = 1000, Diff = 0.369161, Time = 0.78137453
+N=50, T=25
+Iter = 1000, Diff = 0.968342, Time = 0.78257992
+N=50, T=30
+Iter = 1000, Diff = 1.853246, Time = 0.77937469
+N=50, T=35
+Iter = 1000, Diff = 49.236657, Time = 13.31061944
+N=100, T=-10
+Iter = 1000, Diff = 33.034657, Time = 13.43728566
+N=100, T=-5
+Iter = 1000, Diff = 20.132577, Time = 13.28182834
+N=100, T=0
+Iter = 1000, Diff = 10.530416, Time = 13.33538349
+N=100, T=5
+Iter = 1000, Diff = 4.228174, Time = 13.31301926
+N=100, T=10
+Iter = 1000, Diff = 1.225851, Time = 13.34178680
+N=100, T=15
+Iter = 1000, Diff = 1.523447, Time = 12.92261790
+N=100, T=20
+Iter = 1000, Diff = 5.120962, Time = 12.55676022
+N=100, T=25
+Iter = 1000, Diff = 12.018396, Time = 10.95975937
+N=100, T=30
+Iter = 1000, Diff = 22.215750, Time = 10.97497612
+N=100, T=35
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 23782530: <poisson_seq_j_Ofast> in cluster <dcc> Done
+
+Job <poisson_seq_j_Ofast> was submitted from host <n-62-27-18> by user <s194354> in cluster <dcc> at Fri Jan 17 15:15:47 2025
+Job was executed on host(s) <n-62-21-6>, in queue <hpcintro>, as user <s194354> in cluster <dcc> at Fri Jan 17 15:15:48 2025
+</zhome/47/4/147571> was used as the home directory.
+</zhome/47/4/147571/Documents/02614_HPC/Assignment_2_Github> was used as the working directory.
+Started at Fri Jan 17 15:15:48 2025
+Terminated at Fri Jan 17 15:18:05 2025
+Results reported at Fri Jan 17 15:18:05 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+# 02614 - High-Performance Computing, January 2025
+# 
+# Author: Group 1
+#
+#BSUB -J poisson_seq_j_Ofast
+#BSUB -o poisson_seq_j_Ofast_%J.out
+#BSUB -q hpcintro
+#BSUB -n 1
+#BSUB -R "rusage[mem=2048]"
+#BSUB -W 10
+#BSUB -R "span[hosts=1]"
+
+EXECUTABLE=poisson_j
+
+# Defining parameters
+# Number of grid points in each dimension
+GRID_SIZES="3 5 10 15 20 25 50 100"
+# Starting temp
+T_START="-10 -5 0 5 10 15 20 25 30 35"
+# Number of iterations
+MAX_ITER="1000"
+# Tolerance
+TOL="1e-3"
+
+for N in $GRID_SIZES
+do
+    for T in $T_START
+    do
+        ./$EXECUTABLE $N $MAX_ITER $TOL $T
+        echo "N=$N, T=$T"
+    done
+done
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   137.09 sec.
+    Max Memory :                                 47 MB
+    Average Memory :                             46.75 MB
+    Total Requested Memory :                     2048.00 MB
+    Delta Memory :                               2001.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                5
+    Run time :                                   154 sec.
+    Turnaround time :                            138 sec.
+
+The output (if any) is above this job summary.
+
