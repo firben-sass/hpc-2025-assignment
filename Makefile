@@ -2,7 +2,7 @@
 #
 TARGET_J  = bin/poisson_j        # Jacobi
 TARGET_GS = bin/poisson_gs       # Gauss-Seidel
-COMPARE   = bin/compare_outputs  # Comparison tool
+# COMPARE   = bin/compare_outputs  # Comparison tool
 
 SOURCES = main.c print.c alloc3d.c
 OBJECTS = bin/print.o bin/alloc3d.o 
@@ -26,10 +26,10 @@ CFLAGS  = $(DEFS) $(ARCH) $(OPT) $(ISA) $(CHIP) $(IPO) $(PARA) $(XOPTS)
 LDFLAGS = -lm
 
 # Ensure bin directory exists before compiling
-all: bin $(TARGET_J) $(TARGET_GS) $(COMPARE)
+# all: bin $(TARGET_J) $(TARGET_GS) $(COMPARE)
 
-bin:
-	@mkdir -p bin
+# bin:
+# 	@mkdir -p bin
 
 $(TARGET_J): $(OBJECTS) $(OBJS_J)
 	$(CC) -o $@ $(CFLAGS) $(OBJS_J) $(OBJECTS) $(LDFLAGS)
@@ -61,7 +61,8 @@ $(COMPARE): $(TEST_SRC)
 
 clean:
 	@/bin/rm -f core bin/*.o *~
-	@/bin/rm -f $(TARGET_J) $(TARGET_GS) $(COMPARE)
+
+# @/bin/rm -f $(TARGET_J) $(TARGET_GS) $(COMPARE)
 
 realclean: clean
 	@rmdir bin || true
