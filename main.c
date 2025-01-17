@@ -218,7 +218,7 @@ int main(int argc, char *argv[]) {
         diff = diff_1;
         iter++;
     }
-    printf("Used %d iterations, diff = %.6f, time taken: %.8f\n", iter, diff, end_time - start_time);
+    printf("Used %d iterations, diff = %.6f, time taken: %.8f\n", iter, diff, total_time);
     // printf("Time taken: %f\n", end_time - start_time);
 
     // print_matrix(u, N);
