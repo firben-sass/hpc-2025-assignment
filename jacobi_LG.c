@@ -15,5 +15,5 @@ double *** jacobi(double ***u, double ***v, double ***f, int N, double *ki_to_xz
             }
         }
     }
-
+    return v;
 }
