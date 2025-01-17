@@ -3,6 +3,9 @@
  */
 #include <math.h>
 #include <stdio.h>
+#include <omp.h>
+
+
 double *** jacobi(double ***u, double ***v, double ***f, int N) {
     // Using Jacobian method to solve the Poisson problem
     double factor = 1.0/6.0;

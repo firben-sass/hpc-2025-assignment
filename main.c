@@ -132,7 +132,7 @@ int main(int argc, char *argv[]) {
     double diff = 9999999.0;
     double diff_1;
     // Running the iterations until the difference is less than the tolerance or max number of iterations is reached
-    start_time = omp_get_wtime();
+    double total_time = 0.0;
     while (diff > tolerance && iter < iter_max) {
         // Copy u to u_old
         // Allocate a temporary 3D array
@@ -165,7 +165,12 @@ int main(int argc, char *argv[]) {
 
         // Perform the Jacobi or Gauss-Seidel iteration
         #ifdef _JACOBI
+        {
+        start_time = omp_get_wtime();
         v = jacobi_par(u, v, f_matrix, N);
+        end_time = omp_get_wtime();
+        total_time += end_time - start_time;
+        }
 
         // Copy the content of v back to u
         double ***tmp = malloc_3d(N+2, N+2, N+2);
@@ -213,11 +218,10 @@ int main(int argc, char *argv[]) {
         diff = diff_1;
         iter++;
     }
-    end_time = omp_get_wtime();
     printf("Used %d iterations, diff = %.6f, time taken: %.8f\n", iter, diff, end_time - start_time);
     // printf("Time taken: %f\n", end_time - start_time);
 
-    print_matrix(u, N);
+    // print_matrix(u, N);
     // print_3d_matrix(u, N);
 
     // dump  results if wanted 

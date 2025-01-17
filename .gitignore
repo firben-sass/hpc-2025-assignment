@@ -4,3 +4,4 @@ poisson_j
 *.vtk
 core.*
 .csv
+*.er
