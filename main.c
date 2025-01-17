@@ -165,7 +165,7 @@ int main(int argc, char *argv[]) {
 
         // Perform the Jacobi or Gauss-Seidel iteration
         #ifdef _JACOBI
-        v = jacobi(u, v, f_matrix, N);
+        v = jacobi_par(u, v, f_matrix, N);
 
         // Copy the content of v back to u
         double ***tmp = malloc_3d(N+2, N+2, N+2);

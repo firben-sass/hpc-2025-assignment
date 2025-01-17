@@ -8,4 +8,6 @@
 
 // Define prototype
 double *** jacobi(double ***, double ***, double ***, int);
+
+double *** jacobi_par(double ***, double ***, double ***, int);
 #endif
