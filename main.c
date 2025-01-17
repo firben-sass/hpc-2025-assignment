@@ -76,7 +76,7 @@ int main(int argc, char *argv[]) {
     #endif
     #ifdef _GAUSS_SEIDEL
     printf("Running Gauss Seidel\n\n");
-        seq_gauss_seidel(u_1, f, N, iter_max);
+        par_gauss_seidel(u_1, f, N, iter_max);
         // u_1 = gauss_seidel_omp(u_0, f, N)
     #endif
 
