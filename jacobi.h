@@ -6,10 +6,7 @@
 #ifndef _JACOBI_H
 #define _JACOBI_H
 
-int seq_jacobi(double ***, double ***, double ***, int, int);
-
-int par_jacobi(double ***, double ***, double ***, int, int);
-
-// double *** jacobi_LG(double ***, double ***, double ***, int, double *, double *)
-
+// int jacobi(double ***, double ***, double ***, int, int, double *);
+// Define prototype
+double *** jacobi(double ***, double ***, double ***, int);
 #endif
